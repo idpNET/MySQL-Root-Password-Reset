@@ -1,8 +1,6 @@
 ﻿Imports System.IO
-Imports System.Diagnostics
 Imports System.ServiceProcess
 Imports System.ComponentModel
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class frmMain
     Inherits System.Windows.Forms.Form
