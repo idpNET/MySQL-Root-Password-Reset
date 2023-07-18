@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("MySQL Root Password Reset")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("MySQL Root Password Reset")>
+<Assembly: AssemblyCompany("ideapardaz.NET")>
 <Assembly: AssemblyProduct("MySQL Root Password Reset")>
-<Assembly: AssemblyCopyright("Copyright ©  2023")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyCopyright("All Rights Reserved - ideapardaz.NET© 2015-  2023")>
+<Assembly: AssemblyTrademark("All Rights Reserved - ideapardaz.NET© 2015-  2023")>
 
 <Assembly: ComVisible(False)>
 
