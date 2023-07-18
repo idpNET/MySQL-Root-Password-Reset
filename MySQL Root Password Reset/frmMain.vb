@@ -309,6 +309,8 @@ Public Class frmMain
         btnBrowse1.Enabled = True
         btnBrowse2.Enabled = True
         btnDetect.Enabled = True
+        btnSET.Enabled = True
+    End Sub
 
     End Sub
     Private Sub bwRun_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles bwRun.DoWork
