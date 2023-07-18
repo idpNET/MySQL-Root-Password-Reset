@@ -1,6 +1,6 @@
-﻿Imports System.IO
+﻿Imports System.ComponentModel
+Imports System.IO
 Imports System.ServiceProcess
-Imports System.ComponentModel
 
 Public Class frmMain
     Inherits System.Windows.Forms.Form
