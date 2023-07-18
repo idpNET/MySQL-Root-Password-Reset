@@ -382,28 +382,28 @@ Public Class frmMain
     End Sub
     ' Set tool tip
     Private Sub lblTip1_MouseHover(sender As Object, e As EventArgs) Handles lblTip1.MouseHover
-        ToolTip1.SetToolTip(lblTip1, "By default, it should be in : " &
+        ToolTip1.SetToolTip(lblTip1, "By default, file should be in : " &
                             Environment.NewLine &
-                            "<windows installation drive>\Program Files\MySQL\<MySQL Server <Version>\mysql.exe")
+                            "<windows installation drive>\Program Files\MySQL\MySQL Server <Version>\mysql.exe")
 
     End Sub
 
     ' Set tool tip
     Private Sub lblTip2_MouseHover(sender As Object, e As EventArgs) Handles lblTip2.MouseHover
-        ToolTip1.SetToolTip(lblTip2, "By default, it should be in : " &
+        ToolTip1.SetToolTip(lblTip2, "By default, file should be in : " &
                           Environment.NewLine &
-                          "<windows installation drive>\ProgramData\MySQL\<MySQL Server <Version>\my.ini")
+                          "<windows installation drive>\ProgramData\MySQL\MySQL Server <Version>\my.ini")
     End Sub
     ' Set tool tip
     Private Sub lblTip1_MouseClick(sender As Object, e As MouseEventArgs) Handles lblTip1.MouseClick
-        ToolTip1.SetToolTip(lblTip1, "By default, it should be in : " &
+        ToolTip1.SetToolTip(lblTip1, "By default, file should be in : " &
                           Environment.NewLine &
-                          "<windows installation drive>\Program Files\MySQL\<MySQL Server <Version>\mysql.exe")
+                          "<windows installation drive>\Program Files\MySQL\MySQL Server <Version>\mysql.exe")
     End Sub
     ' Set tool tip
     Private Sub lblTip2_MouseClick(sender As Object, e As MouseEventArgs) Handles lblTip2.MouseClick
-        ToolTip1.SetToolTip(lblTip2, "By default, it should be in : " &
+        ToolTip1.SetToolTip(lblTip2, "By default, file should be in : " &
                         Environment.NewLine &
-                        "<windows installation drive>\ProgramData\MySQL\<MySQL Server <Version>\my.ini")
+                        "<windows installation drive>\ProgramData\MySQL\MySQL Server <Version>\my.ini")
     End Sub
 End Class
