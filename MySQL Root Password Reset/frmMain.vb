@@ -143,18 +143,30 @@ Public Class frmMain
         If rtbNotification.InvokeRequired Then
             rtbNotification.Invoke(Sub() AppendTextToNotification(text))
         Else
+            Dim startIndex As Integer = rtbNotification.TextLength
             rtbNotification.AppendText(text & Environment.NewLine)
             rtbNotification.ScrollToCaret() ' Scroll to the end of the text
         End If
     End Sub
 
+            ' Check for specific strings and apply formatting
+            Dim searchString1 As String = "Operation completed in"
+            Dim searchString2 As String = "Password change failed. Killing mysqld.exe processes ..."
+            Dim searchString3 As String = "Password successfully changed. Killing mysqld.exe processes ..."
 
-
-
-
-    Private Sub frmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        ' Stop the MySQL service before closing the form
-        StopMySQLService()
+            If text.Contains(searchString1) Then
+                rtbNotification.Select(startIndex, text.Length)
+                rtbNotification.SelectionBackColor = Color.DimGray
+            ElseIf text.Contains(searchString2) Then
+                rtbNotification.Select(startIndex, text.Length)
+                rtbNotification.SelectionColor = Color.Red
+                rtbNotification.SelectionBackColor = Color.FromArgb(40, 40, 40)
+            ElseIf text.Contains(searchString3) Then
+                rtbNotification.Select(startIndex, text.Length)
+                rtbNotification.SelectionColor = Color.LimeGreen
+                rtbNotification.SelectionBackColor = Color.FromArgb(40, 40, 40)
+            End If
+        End If
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
