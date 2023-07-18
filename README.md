@@ -12,7 +12,7 @@
     <a href="https://github.com/idpNET/MySQL-Root-Password-Reset"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/idpNET/MySQL-Root-Password-Reset/Demo.gif">View Demo</a>
+    <a href="#about-the-project">View Demo</a>
     .
     <a href="https://github.com/idpNET/MySQL-Root-Password-Reset/issues">Report Bug</a>
     .
@@ -45,13 +45,13 @@ Main Capabilities:
 * Password set capability
 * Notifications to log runtime activities (comes in handy when debuging is needed) 
 
-## packages
+## Packages
 
 Microsoft System.ServiceProcess.ServiceController
 
 * [System.ServiceProcess.ServiceController 7.0.1](https://www.nuget.org/packages/System.ServiceProcess.ServiceController/7.0.1)
 
-## installation
+## Installation
 
 1. Clone the repo in visual studio
 ```sh
