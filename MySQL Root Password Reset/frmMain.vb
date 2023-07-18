@@ -319,7 +319,7 @@ Public Class frmMain
             Dim tempFileName As String = Path.GetRandomFileName()
             Dim tempFilePath As String = Path.Combine(tempFolderPath, tempFileName)
             Dim mysqlBinDirectory As String = Path.GetDirectoryName(mysqldPath)
-            Dim mysqlCommand As String = $"mysqld --defaults-file= --init-file=""{tempFilePath}"" --console"""
+            Dim mysqlCommand As String = $"mysqld --defaults-file=""{myIniPath}"" --init-file=""{tempFilePath}"" --console"""
             ' Write the alter statement to the temp file
             File.WriteAllText(tempFilePath, $"alter user 'root'@'localhost' identified by '{newPassword}';")
             ' Check if cancellation is requested before starting any operations
