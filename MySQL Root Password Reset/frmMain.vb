@@ -332,7 +332,7 @@ Public Class frmMain
             ' Report progress to update the progress bar
             bwRun.ReportProgress(0, "Stopping MySQL service... (UI might look unresponsive for a while)")
             StopMySQLService()
-            System.Threading.Thread.Sleep(1000) ' Simulate some work
+
             ' Check if cancellation is requested before starting any operations
             If isCancellationRequested Then
                 e.Cancel = True ' Set the cancellation flag in the event args
@@ -340,7 +340,7 @@ Public Class frmMain
             End If
             bwRun.ReportProgress(10, "mysqld.exe processes killed.")
             KillMySQLDProcesses()
-            System.Threading.Thread.Sleep(1000) ' Simulate some work
+
             ' Check if cancellation is requested before starting any operations
             If isCancellationRequested Then
                 e.Cancel = True ' Set the cancellation flag in the event args
@@ -348,7 +348,7 @@ Public Class frmMain
             End If
             bwRun.ReportProgress(30, "Attempting to change root user password ...")
             RunCommandAsAdministrator(mysqlCommand, mysqlBinDirectory)
-            System.Threading.Thread.Sleep(1000) ' Simulate some work
+
             ' Check if cancellation is requested before starting any operations
             If isCancellationRequested Then
                 e.Cancel = True ' Set the cancellation flag in the event args
@@ -358,7 +358,7 @@ Public Class frmMain
 
             bwRun.ReportProgress(70, "Restarting MySQL service ... (UI might look unresponsive for a while)")
             StartMySQLService()
-            System.Threading.Thread.Sleep(1000) ' Simulate some work
+
             ' Check if cancellation is requested before starting any operations
             If isCancellationRequested Then
                 e.Cancel = True ' Set the cancellation flag in the event args
