@@ -389,4 +389,16 @@ Public Class frmMain
                           Environment.NewLine &
                           "<windows installation drive>\ProgramData\MySQL\<MySQL Server <Version>\my.ini")
     End Sub
+
+    Private Sub lblTip1_MouseClick(sender As Object, e As MouseEventArgs) Handles lblTip1.MouseClick
+        ToolTip1.SetToolTip(lblTip1, "By default, it should be in : " &
+                          Environment.NewLine &
+                          "<windows installation drive>\Program Files\MySQL\<MySQL Server <Version>\mysql.exe")
+    End Sub
+
+    Private Sub lblTip2_MouseClick(sender As Object, e As MouseEventArgs) Handles lblTip2.MouseClick
+        ToolTip1.SetToolTip(lblTip2, "By default, it should be in : " &
+                        Environment.NewLine &
+                        "<windows installation drive>\ProgramData\MySQL\<MySQL Server <Version>\my.ini")
+    End Sub
 End Class
