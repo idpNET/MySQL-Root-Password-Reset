@@ -5,7 +5,7 @@ Imports System.ComponentModel
 Public Class frmMain
     Inherits System.Windows.Forms.Form
     Private stopwatch As Stopwatch ' Declare the Stopwatch object
-    Private once_accounced As Boolean = False
+    Private once_announced As Boolean = False ' Flag to track operation result detection and announcement
     Private isCancellationRequested As Boolean ' Flag to track cancellation request
     Private Sub btnBrowse1_Click(sender As Object, e As EventArgs) Handles btnBrowse1.Click
         Dim openFileDialog1 As New OpenFileDialog()
